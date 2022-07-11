@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       this.hasMany(models.Pembayaran, {
         foreignKey: "idSiswa",
         as: "pembayaran",
+        onDelete: 'NO ACTION'
       });
     }
   }
